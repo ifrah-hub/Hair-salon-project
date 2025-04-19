@@ -1,0 +1,521 @@
+body{
+  font-family:  'poppins-semibold' ,  poppins, sans-serif ;
+  padding: 0;
+  margin: 0;
+  padding-top: 30px;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-style: italic;
+}
+div{
+  margin: 0;
+  padding: 0;
+}
+
+                                                /*fixed part on the top*/
+.build-by-whom{
+  background: white;
+  height: 30px;
+  width: 100%;
+  font-size: 13px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.3);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1100;
+}
+.build-by-whom-vs{
+  font-weight: bold;
+  margin: 0px 3px;
+}
+
+
+                                  /*picture container*/
+
+.head-image{
+  /* border: 2px solid rgb(0, 255, 0); */
+
+  width: auto;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  position: relative ;
+  z-index: 1;
+  background: rgb(232, 232, 232);
+
+}
+ 
+.head-image img{
+  /* border: 2px solid black; */
+
+  font-size: 13px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+                                           /*Navigation bar container*/
+
+.navigation-bar{
+  /* border: 2px solid gray; */
+
+  height: 40px;
+  background-color: rgb(216, 216, 216);
+
+  display: flex;
+  position: sticky;
+  z-index: 1000;
+  top: 30px;
+
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+/*navigations*/
+
+.navigations-container{
+  /* border: 2px solid purple; */
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 3;
+}
+
+.navigations{
+  /* border: 2px solid black; */
+
+  display: flex;
+  justify-content:space-between ;
+  width: 500px;
+
+}
+
+.navigations-container .navigations div,
+.navigations-container .navigations a{
+  /* border: 2px solid yellow; */
+
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(82, 84, 82);
+  text-transform: capitalize;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigations-container .navigations div:hover,
+.navigations-container .navigations a:hover{
+  color: white;
+}
+
+
+/*side-information-login-other*/
+
+.side-information-login-other{
+  /* border: 2px solid pink; */
+  
+  width: 150px;
+  margin-right: 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side-information-login-other .login{
+  /* border: 2px solid purple; */
+
+  font-family: monospace;
+  font-size: 18px;
+
+  cursor: pointer;
+}
+.side-information-login-other .login:hover{
+  opacity: 0.5;
+}
+
+
+.side-information .like,
+.side-information .cart{
+  height: 25px;
+  cursor: pointer;
+}
+.side-information .like:hover,
+.side-information .cart:hover{
+  opacity: 0.5;
+}
+
+
+.side-information .cart{
+ position: relative;
+ top: 3px;
+}
+
+                                                  /*header csss ends here*/
+
+                                                 /*first headind csss*/
+
+
+.first-heading{
+  /* border: 2px solid black; */
+
+  font-size: 100px;
+  font-weight: 850;
+  color: rgb(46, 46, 46);
+  text-transform: uppercase;
+  display: grid;
+  place-content: center;
+  padding: 10px 0px;
+}
+                                                    /*main css starts here*/
+
+main{
+  /* border: 5px solid lime; */
+
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+                      /* browse and mutiple ads css starts here*/
+
+/* Browse by css */
+
+
+.browse-by-column{
+  /* border : 3px solid rgb(255, 0, 0); */
+
+  padding-left: 25px;
+  padding-right: 45px;
+}
+
+.browse-tittle{
+  border-bottom: 1px solid rgb(192, 192, 192);
+  font-weight: 600;
+  padding-bottom: 13px;
+}
+
+.browse-options{
+  /* border: 2px solid black; */
+  padding-top: 15px;
+  display: grid;
+
+  div,
+  a{
+    color: rgb(36, 36, 36);
+    cursor: pointer;
+    width: fit-content;
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 5px;
+    text-decoration: none;
+  }
+  div:hover,
+  a:hover{
+    opacity: 0.8;
+    text-decoration: underline;
+    font-size: 15.1px;
+  }
+  .important{
+    text-decoration: underline;
+    font-weight: normal;
+  }
+}
+
+
+                            /*mutiple ads css*/
+
+.mutiple-ads-column{
+  /* border : 3px solid rgb(0, 13, 255); */
+
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 20px;
+  row-gap: 25px;
+}
+.ads{
+  /* border: 2px solid black; */
+
+  height: fit-content;
+  width: fit-content;
+  display: grid;
+  place-items: center;
+  row-gap: 7px;
+
+  span{
+    text-decoration: line-through;
+  }
+}
+.ads-picture{
+  /* border: 2px solid purple; */
+
+  height: 250px;
+  width: 400px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.ads-picture img{
+  height: 250px;
+  width: 400px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+.ads-tittle,
+.ads-stock{
+  /* border: 2px solid green; */
+
+  font-weight: 200;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+                              /*shop page footer starts here*/
+
+.home-page-footer{
+  /* border: 5px solid lime; */
+
+  background: rgb(39, 155, 58);
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 100px;
+  row-gap: 150px;
+  padding: 55px 70px;
+}
+
+/*fooeter contact styling*/
+
+.footer-contacts{
+  /* border: 2px solid purple; */
+
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  text-transform: capitalize;
+  height: 170px;
+}
+
+.footer-contacts-menu{
+    /* border: 2PX solid black; */
+
+  display: grid;
+  row-gap: 4px;
+  font-size: 14px;
+
+  div,
+  a{
+    cursor: pointer;
+    width: fit-content;
+    color: white;
+    text-decoration: none;
+  }
+  div:hover,
+  a:hover{
+    text-decoration: underline;
+  }
+
+  .important{
+    
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+}
+.footer-contacts-policy{
+  /* border: 2PX solid black; */
+
+
+  display: grid;
+  row-gap: 4px;
+  font-size: 14px;
+
+  div{
+    cursor: pointer;
+    width: fit-content;
+  }
+  div:hover{
+    text-decoration: underline;
+  }
+
+  .important{
+    
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+  }
+}
+.footer-contacts-contacts{
+  /* border: 2PX solid black; */
+
+  height: 140px;
+  display: grid;
+  row-gap: 4px;
+  font-size: 14px;
+
+  div{
+    cursor: pointer;
+    width: fit-content;
+  }
+  div:hover{
+    text-decoration: underline;
+  }
+
+  .important{
+    
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover{
+    text-decoration: underline;
+  }
+}
+
+/* footer subscribe styling*/
+
+.footer-subscribe{
+  /* border: 2px solid purple; */
+
+  height: 170px;
+  display: grid;
+  row-gap: 7px;
+}
+.footer-subscribe-tittle{
+  /* border: 2px solid black; */
+
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.footer-subscribe-checkbox{
+  /* border: 2px solid black; */
+
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  column-gap: 10px;
+  
+}
+
+.footer-subscribe-email{
+  /* border: 2px solid black; */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 10px;
+
+
+  input{
+    height: 40px;
+    padding-left: 15px;
+    background-color: rgb(39, 155, 58);
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+  }
+  input::placeholder{
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+  }
+
+  button{
+    height: 40px;
+    background-color: rgb(0, 172, 174) ;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+
+  }
+  button:hover{
+    opacity: 0.8;
+    border: 1px solid white;
+  }
+  button:active{
+    opacity: 0.3;
+  }
+}
+
+
+/* footer title styling*/
+
+.footer-tittle{
+  /* border: 2px solid purple; */
+
+  font-size: 75px;
+}
+
+/* footer other links info styling*/
+
+.footer-other-links-info{
+  /* border: 2px solid purple; */
+
+  display: grid;
+  place-items: center;
+}
+
+.footer-other-links{
+  /* border: 2px solid lime; */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+
+  .links{
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .links:hover{
+    opacity: 0.8;
+  }
+  .links:active{
+    opacity: 0.3;
+  }
+}
+
+.footer-links-info{
+  /* border: 2px solid black; */
+
+  span{
+    font-weight: 600;
+  }
+
+  a{
+    color: white;
+  }
+}
